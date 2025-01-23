@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gitlab On AWS
+parent: Gitlab
 nav_order: 2
 ---
 
