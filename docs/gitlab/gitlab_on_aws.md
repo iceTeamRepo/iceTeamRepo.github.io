@@ -2,7 +2,6 @@
 layout: default
 title: Gitlab On AWS
 permalink: gitlab/gitlab_on_aws
-parent: Gitlab
 nav_order: 2
 ---
 
@@ -81,7 +80,7 @@ nav_order: 2
         - 2 > Network 구성
             1. VPC 생성
                 
-                ![image.png](image%205.png)
+                ![image.png](asset/img/gitlab/gitlab_on_aws/image%205.png)
                 
                 - VPC 왼쪽 메뉴에서 **Your VPCs**를 선택한 후 **Create VPC**를 클릭
                 - **Name tag**에 `gitlab-vpc`를 입력하고, **IPv4 CIDR block**에는 `10.0.0.0/16`을 입력
@@ -90,7 +89,7 @@ nav_order: 2
                 - **Enable DNS resolution**을 체크하고, **Save**를 클릭하여 저장
             2. Subnet 생성
                 
-                ![image.png](image%206.png)
+                ![image.png](asset/img/gitlab/gitlab_on_aws/image%206.png)
                 
                 | Name tag | Type | Availability Zone | CIDR block |
                 | --- | --- | --- | --- |
@@ -289,7 +288,7 @@ nav_order: 2
                         10. 가용 영역 배치
                             - 가용 영역을 수동으로 선택하고, **Replica 2**는 다른 가용 영역을 선택
                                 
-                                ![image.png](image%207.png)
+                                ![image.png](asset/img/gitlab/gitlab_on_aws/image%207.png)
                                 
                         11. 보안 설정
                             - **Security groups**에서 이전에 생성한 `gitlab-redis-sec-group`을 선택
@@ -581,13 +580,13 @@ nav_order: 2
             - CloudWatch에서 스케일링 정책 설정
                 - Scale Up Policy
                     
-                    ![image.png](image%208.png)
+                    ![image.png](asset/img/gitlab/gitlab_on_aws/image%208.png)
                     
                     - 조건: CPUUtilization 60% 이상 -> 1 capacity unit 추가
                     - 정책 이름: `Scale Up Policy`
                 - Scale Down Policy
                     
-                    ![image.png](image%209.png)
+                    ![image.png](asset/img/gitlab/gitlab_on_aws/image%209.png)
                     
                     - 조건: CPUUtilization 45% 이하 -> 1 capacity unit 제거
                     - 정책 이름: `Scale Down Policy`
