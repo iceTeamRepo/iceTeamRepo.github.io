@@ -113,16 +113,16 @@ Gitlab Storage 에 대한 설명 페이지
             
 - 저장소 종류
     
-    
-    | 저장 가능한 객체 | Hashed Storage | S3 호환 저장소 |
-    | --- | --- | --- |
-    | Repository | Yes | - |
-    | Attachments | Yes | - |
-    | Avatars | No | - |
-    | CI/CD Job Logs | No | Yes |
-    | CI/CD Artifacts | No | Yes |
-    | LFS Objects | Similar | Yes |
-    | Repository Pools | Yes | - |
+    - 저장 가능한 객체
+      | 저장 가능한 객체 | Hashed Storage | S3 호환 저장소 |
+      | --- | --- | --- |
+      | Repository | Yes | - |
+      | Attachments | Yes | - |
+      | Avatars | No | - |
+      | CI/CD Job Logs | No | Yes |
+      | CI/CD Artifacts | No | Yes |
+      | LFS Objects | Similar | Yes |
+      | Repository Pools | Yes | - |
     - Gitaly에서 관리되는 저장소
         - 프로젝트 저장소 (Project Repository)
             - GitLab의 각 프로젝트는 Git 저장소로 관리되며, 이는 Gitaly에서 처리
