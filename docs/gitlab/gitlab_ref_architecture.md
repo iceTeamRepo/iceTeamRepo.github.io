@@ -5,6 +5,9 @@ parent: Gitlab
 nav_order: 1
 ---
 
+# Child
+{: .no_toc }
+
 # Gitlab Reference Architecture
 
 > Gitlab Architecture 에 대한 설명 페이지

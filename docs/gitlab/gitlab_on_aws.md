@@ -5,6 +5,9 @@ parent: Gitlab
 nav_order: 2
 ---
 
+# Child
+{: .no_toc }
+
 # Gitlab On AWS
 
 - Gitlab On AWS
