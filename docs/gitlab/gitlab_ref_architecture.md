@@ -7,7 +7,7 @@ nav_order: 1
 
 # Gitlab Reference Architecture
 
-> Gitlab Architecture 에 대한 설명 페이지
+Gitlab Architecture 에 대한 설명 페이지
 
 
 ## Gitlab Modules

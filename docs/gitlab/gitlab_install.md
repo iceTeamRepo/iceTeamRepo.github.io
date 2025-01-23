@@ -2,7 +2,7 @@
 layout: default
 title: Install Gitlab
 permalink: gitlab/gitlab_install
-nav_order: 2
+nav_order: 3
 ---
 
 # Install Gitlab
@@ -15,7 +15,7 @@ nav_order: 2
     - Architecture
         - 기본 20 RPS 또는 1000 Users (Omnibus 리눅스 패키지 사용)
             
-            ![aws_ha_architecture_diagram_v17_0.png](aws_ha_architecture_diagram_v17_0.png)
+            ![aws_ha_architecture_diagram_v17_0.png](../assets/img/gitlab/gitla_install/aws_ha_architecture_diagram_v17_0.png)
             
         - 60 RPS, 3,000 Users (Omnibus 리눅스 패키지 사용)
             - HA가 필요 : Auto Scaling 그룹 사용
