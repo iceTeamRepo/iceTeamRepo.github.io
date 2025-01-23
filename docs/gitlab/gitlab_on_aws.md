@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Gitlab On AWS
-excerpt: gitlab-architecture
 nav_order: 2
 ---
 

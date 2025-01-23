@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Gitlab Reference Architecture
-excerpt: gitlab-architecture
 nav_order: 1
 ---
 
