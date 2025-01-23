@@ -19,3 +19,6 @@ Gitlab 에 대한 정리 자료입니다.
 
 ## Storage
 - [Gitlab Storage](gitlab/gitlab_storage)
+
+## Runner
+- [Gitlab Storage](gitlab/gitlab_runner)
