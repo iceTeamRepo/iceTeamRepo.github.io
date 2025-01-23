@@ -15,7 +15,7 @@ nav_order: 3
     - Architecture
         - 기본 20 RPS 또는 1000 Users (Omnibus 리눅스 패키지 사용)
             
-            ![image_4.png](../assets/img/gitlab/gitla_install/image_4.png)
+            ![image_4.png](../assets/img/gitlab/gitlab_install/image_4.png)
             
         - 60 RPS, 3,000 Users (Omnibus 리눅스 패키지 사용)
             - HA가 필요 : Auto Scaling 그룹 사용
@@ -81,7 +81,7 @@ nav_order: 3
         - 2 > Network 구성
             1. VPC 생성
                 
-                ![image05.png](../assets/img/gitlab/gitla_install/image_5.png)
+                ![image05.png](../assets/img/gitlab/gitlab_install/image_5.png)
                 
                 - VPC 왼쪽 메뉴에서 **Your VPCs**를 선택한 후 **Create VPC**를 클릭
                 - **Name tag**에 `gitlab-vpc`를 입력하고, **IPv4 CIDR block**에는 `10.0.0.0/16`을 입력
@@ -90,7 +90,7 @@ nav_order: 3
                 - **Enable DNS resolution**을 체크하고, **Save**를 클릭하여 저장
             2. Subnet 생성
                 
-                ![image06.png](../assets/img/gitlab/gitla_install/image_6.png)
+                ![image06.png](../assets/img/gitlab/gitlab_install/image_6.png)
                 
                 | Name tag | Type | Availability Zone | CIDR block |
                 | --- | --- | --- | --- |
@@ -289,7 +289,7 @@ nav_order: 3
                         10. 가용 영역 배치
                             - 가용 영역을 수동으로 선택하고, **Replica 2**는 다른 가용 영역을 선택
                                 
-                                ![image07.png](../assets/img/gitlab/gitla_install/image_7.png)
+                                ![image07.png](../assets/img/gitlab/gitlab_install/image_7.png)
                                 
                         11. 보안 설정
                             - **Security groups**에서 이전에 생성한 `gitlab-redis-sec-group`을 선택
@@ -581,13 +581,13 @@ nav_order: 3
             - CloudWatch에서 스케일링 정책 설정
                 - Scale Up Policy
                     
-                    ![image08.png](../assets/img/gitlab/gitla_install/image_8.png)
+                    ![image08.png](../assets/img/gitlab/gitlab_install/image_8.png)
                     
                     - 조건: CPUUtilization 60% 이상 -> 1 capacity unit 추가
                     - 정책 이름: `Scale Up Policy`
                 - Scale Down Policy
                     
-                    ![image09.png](../assets/img/gitlab/gitla_install/image_9.png)
+                    ![image09.png](../assets/img/gitlab/gitlab_install/image_9.png)
                     
                     - 조건: CPUUtilization 45% 이하 -> 1 capacity unit 제거
                     - 정책 이름: `Scale Down Policy`
