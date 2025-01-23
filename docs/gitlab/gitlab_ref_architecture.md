@@ -2,6 +2,7 @@
 layout: default
 title: Gitlab Reference Architecture
 parent: Gitlab
+permalink: gitlab/gitlab_ref_architecture
 nav_order: 3
 ---
 

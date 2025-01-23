@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gitlab On AWS
+permalink: gitlab/gitlab_on_aws
 parent: Gitlab
 nav_order: 2
 ---
