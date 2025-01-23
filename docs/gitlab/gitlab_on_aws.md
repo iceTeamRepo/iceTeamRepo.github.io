@@ -5,9 +5,6 @@ permalink: gitlab/gitlab_on_aws
 nav_order: 2
 ---
 
-# Child
-{: .no_toc }
-
 # Gitlab On AWS
 
 - Gitlab On AWS
