@@ -10,7 +10,7 @@ nav_order: 2
 Gitlab Configuration 에 대한 설명 페이지
 
 
-# [Nginx](https://docs.gitlab.com/omnibus/settings/nginx.html)
+## [Nginx](https://docs.gitlab.com/omnibus/settings/nginx.html)
 - 설명
     - GitLab의 NGINX 설정은 다양한 서비스에 대해 개별적으로 구성할 수 있음
     - 이 설정은 GitLab 자체와 Mattermost, Registry, Pages와 같은 다른 서비스에 대해 조정 가능
@@ -384,7 +384,7 @@ Gitlab Configuration 에 대한 설명 페이지
         sudo gitlab-ctl reconfigure
         ```
 
-#  Reference
+## Reference
 
 - [https://docs.gitlab.com/ee/administration/configure.html](https://docs.gitlab.com/ee/administration/configure.html)
 - [https://docs.gitlab.com/omnibus/settings/](https://docs.gitlab.com/omnibus/settings/)
