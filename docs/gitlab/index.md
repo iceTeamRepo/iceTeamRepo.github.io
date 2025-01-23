@@ -6,7 +6,7 @@ has_children: true
 permalink: /docs/gitlab
 ---
 
-# Welcome to study Gitlab
+# Gitlab
 
 Gitlab 에 대한 정리 자료입니다.
 
