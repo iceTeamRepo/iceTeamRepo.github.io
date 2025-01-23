@@ -94,7 +94,7 @@ nav_order: 1
                 | **Object Storage** | GitLab의 객체 저장소 (외부 PaaS 추천) | - | - |
         - [Up to 60 RPS or 3,000 users](https://docs.gitlab.com/ee/administration/reference_architectures/3k_users.html#cloud-native-hybrid-reference-architecture-with-helm-charts-alternative) *API: 60 RPS, Web: 6 RPS, Git (Pull): 6 RPS, Git (Push): 1 RPS*
             
-            ![image01.png](../assets/img/gitlab/gitlab_ref_architecture/image%201.png)
+            ![image01.png](../assets/img/gitlab/gitlab_ref_architecture/image_1.png)
             
             - Kubernetes에서 실행되는 GitLab 컴포넌트
                 
@@ -125,7 +125,7 @@ nav_order: 1
                 - [https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/3k.yaml](https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/3k.yaml)
         - [Up to 100 RPS or 5,000 users](https://docs.gitlab.com/ee/administration/reference_architectures/5k_users.html#cloud-native-hybrid-reference-architecture-with-helm-charts-alternative) *API: 100 RPS, Web: 10 RPS, Git (Pull): 10 RPS, Git (Push): 2 RPS*
             
-            ![image02.png](../assets/img/gitlab/gitlab_ref_architecture/image%202.png)
+            ![image02.png](../assets/img/gitlab/gitlab_ref_architecture/image_2.png)
             
             - 설정 예시
                 - [https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/5k.yaml](https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/5k.yaml)
@@ -162,7 +162,7 @@ nav_order: 1
                 | **객체 저장소** | - | - | - | - |
         - [Up to 200 RPS or 10,000 users](https://docs.gitlab.com/ee/administration/reference_architectures/10k_users.html#cloud-native-hybrid-reference-architecture-with-helm-charts-alternative) *API: 200 RPS, Web: 20 RPS, Git (Pull): 20 RPS, Git (Push): 4 RPS*
             
-            ![image03.png](../assets/img/gitlab/gitlab_ref_architecture/image%203.png)
+            ![image03.png](../assets/img/gitlab/gitlab_ref_architecture/image_3.png)
             
             - 설정 예시
                 - [https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/10k.yaml](https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/10k.yaml)
@@ -199,7 +199,7 @@ nav_order: 1
                 | **객체 스토리지** | - | - | - | - |
         - [Up to 500 RPS or 25,000 users](https://docs.gitlab.com/ee/administration/reference_architectures/25k_users.html#cloud-native-hybrid-reference-architecture-with-helm-charts-alternative) *API: 500 RPS, Web: 50 RPS, Git (Pull): 50 RPS, Git (Push): 10 RPS*
             
-            ![image04.png](../assets/img/gitlab/gitlab_ref_architecture/image%204.png)
+            ![image04.png](../assets/img/gitlab/gitlab_ref_architecture/image_4.png)
             
             - 설정 예시
                 - [https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/25k.yaml](https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/25k.yaml)
@@ -236,7 +236,7 @@ nav_order: 1
                 | **객체 스토리지** | - | - | - | - |
         - [Up to 1000 RPS or 50,000 users](https://docs.gitlab.com/ee/administration/reference_architectures/50k_users.html#cloud-native-hybrid-reference-architecture-with-helm-charts-alternative) *API: 1000 RPS, Web: 100 RPS, Git (Pull): 100 RPS, Git (Push): 20 RPS*
             
-            ![image04.png](../assets/img/gitlab/gitlab_ref_architecture/image%204.png)
+            ![image04.png](../assets/img/gitlab/gitlab_ref_architecture/image_4.png)
             
             - 설정 예시
                 - [https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/50k.yaml](https://gitlab.com/gitlab-org/charts/gitlab/-/blob/master/examples/ref/50k.yaml)
