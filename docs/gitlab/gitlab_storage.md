@@ -9,7 +9,8 @@ nav_order: 4
 
 Gitlab Storage 에 대한 설명 페이지
 
-- Repository Storage
+## Repository Storage
+
 - 설명
     - GitLab에서 저장소(repository storage)는 프로젝트 데이터를 저장하는 공간을 의미
     - GitLab에서는 물리적 저장소와 가상 저장소를 설정하여 데이터를 저장
