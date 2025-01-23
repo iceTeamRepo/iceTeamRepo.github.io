@@ -659,7 +659,6 @@ Gitlab Runner 에 대한 설명 페이지
                 ![image.png](../assets/img/gitlab/gitlab_runner/runer_crt_4.png)
                 
             7. **Create personal access token** 클릭
-                - glpat-AjyUXb7DtS92zXZKDHXN
         - **Group Access Token** 생성 **(**GitLab Premium ****이상 버전에서 제공)
             1. 홈에서 좌측 메뉴 **Groups → 그룹 선택** 
                 
