@@ -13,3 +13,9 @@ Gitlab 에 대한 정리 자료입니다.
 
 ## Install
 - [Gitlab Install](gitlab/gitlab_install)
+
+## Configuration
+- [Gitlab Install](gitlab/gitlab_config)
+
+## Gitaly
+- [Gitlab Install](gitlab/gitlab_storage)
