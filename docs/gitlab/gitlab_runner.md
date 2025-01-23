@@ -637,9 +637,9 @@ Gitlab Runner 에 대한 설명 페이지
     - Docker로 Runner 등록을 할 경우, GitLab Runner를 Docker 컨테이너 내에 설치
     - Runner 인증 토큰
 - Runner 생성 및 등록
-    - Step 1 > Personal Access Token 생성
+    - Step 1 > PAT 생성
         - Access Token 은 GitLab REST API를 사용하여 러너를 생성할 때 필요하며 안전하게 저장해야 함
-        - **Personal Access Token 생성**
+        - **PAT 생성**
             1. GitLab에서 좌측 사이드바에서 Abatar 선택
                 
                 ![image.png](../assets/img/gitlab/gitlab_runner/runer_crt_1.png)
@@ -649,7 +649,7 @@ Gitlab Runner 에 대한 설명 페이지
                 
                 ![image.png](../assets/img/gitlab/gitlab_runner/runer_crt_2.png)
                 
-            4. **Personal access tokens** 에서 **Add new token** 선택
+            4. **PAT** 에서 **Add new token** 선택
             5. 토큰에 이름과 만료일을 설정 (만료일을 설정하지 않으면 기본적으로 365일로 설정)
                 
                 ![image.png](../assets/img/gitlab/gitlab_runner/runer_crt_3.png)
@@ -658,7 +658,7 @@ Gitlab Runner 에 대한 설명 페이지
                 
                 ![image.png](../assets/img/gitlab/gitlab_runner/runer_crt_4.png)
                 
-            7. **Create personal access token** 클릭
+            7. **Create PAT** 클릭
         - **Group Access Token** 생성 **(**GitLab Premium ****이상 버전에서 제공)
             1. 홈에서 좌측 메뉴 **Groups → 그룹 선택** 
                 
@@ -685,7 +685,7 @@ Gitlab Runner 에 대한 설명 페이지
         - Runner 인증 토큰 얻기 (`API`)
             
             ```yaml
-              # Personal Access Token 필요하며 Runner 인증 토큰 얻는 경우 아래와 같이 수행
+              # PAT 필요하며 Runner 인증 토큰 얻는 경우 아래와 같이 수행
               response=$(curl -k --request POST -L "https://gitlab.idtice.com/api/v4/user/runners" \
                   --header "PRIVATE-TOKEN: <GITLAB-PERSONAL-ACCESS-TOKEN>" \
                   --form "tag_list=docker.t3" \
