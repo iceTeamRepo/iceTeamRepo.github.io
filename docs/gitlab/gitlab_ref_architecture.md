@@ -1,54 +1,61 @@
 ---
 layout: default
-title: Gitlab Architecture
+title: Gitlab Reference Architecture
 excerpt: gitlab-architecture
 nav_order: 1
 ---
 
-# Gitlab
+# Gitlab Reference Architecture
 
 > Gitlab Architecture 에 대한 설명 페이지
 
 
 ## Gitlab Modules
 
-    - **캐싱 및 세션 관리**
-        - **Redis**
-            - GitLab에서 캐싱 및 세션 데이터를 저장하고 빠르게 접근할 수 있도록 지원
-        - **Redis Sentinel**
-            - Redis 인스턴스들의 상태를 모니터링하고, 장애 발생 시 자동으로 장애 복구를 수행하여 Redis의 고가용성을 보장
-    - **서비스 디스커버리 및 고가용성 관리 ( Premium, Ultimate )**
-        - **Consul**
-            - 서비스 디스커버리 기능을 제공하여 GitLab의 각 서비스들의 위치와 상태 정보를 관리
-        - **Patroni**
-            - PostgreSQL 데이터베이스의 고가용성을 관리하며, 자동 장애 복구 및 리더 선출을 담당
-    - **데이터베이스 관리**
-        - **Postgresql**
-            - GitLab의 주 데이터베이스로, 사용자 데이터 및 프로젝트 정보를 저장
-        - **PgBouncer**
-            - PostgreSQL 데이터베이스의 connection pool을 관리하고, failover를 처리
-    - **Git 저장소 및 버전 관리**
-        - **Gitaly**
-            - Git 저장소의 데이터를 저장하고 접근을 관리하는 Git RPC 서비스
-        - **Praefect**
-            - Git 클라이언트와 Gitaly 스토리지 노드 간의 **투명한 프록시** 역할을 하여, 여러 Gitaly 서버 간의 상호작용을 관리
-    - **로드 밸런싱**
-        - **Internal Loadbalancer**
-            - GitLab의 내부 서비스 간 통신을 위한 로드밸런서로, 서비스 간의 트래픽을 효율적으로 분배
-        - **External Loadbalancer**
-            - 외부에서 들어오는 트래픽을 처리하는 로드밸런서로, GitLab 에 대한 외부 접근을 분배하고 최적화
-    - **비동기 작업 처리**
-        - **Sidekiq**
-            - GitLab에서 비동기 작업을 처리하는 백그라운드 작업 큐로, 이메일 전송, 통계 수집 등과 같은 시간 소모적인 작업을 처리
-    - **웹 서비스 및 API**
-        - **GitLab Rails**
-            - GitLab의 비즈니스 로직을 처리하는 Ruby on Rails 애플리케이션. 데이터베이스와 상호작용하고, 클라이언트의 요청을 처리
-        - **Puma**
-            - GitLab Rails 애플리케이션을 실행하는 웹 서버. HTTP 요청을 받아 처리하고, 클라이언트에게 응답을 반환
-    - **리버스 프록시 및 파일 업로드 처리**
-        - **GitLab Workhorse**
-            - GitLab의 리버스 프록시로, 대용량 파일 업로드, Git 클론 및 푸시 작업을 처리
-            - 이를 통해 클라이언트와 서버 간의 효율적인 데이터 전송을 지원
+- **캐싱 및 세션 관리**
+    - **Redis**
+        - GitLab에서 캐싱 및 세션 데이터를 저장하고 빠르게 접근할 수 있도록 지원
+    - **Redis Sentinel**
+        - Redis 인스턴스들의 상태를 모니터링하고, 장애 발생 시 자동으로 장애 복구를 수행하여 Redis의 고가용성을 보장
+
+- **서비스 디스커버리 및 고가용성 관리 (Premium, Ultimate)**
+    - **Consul**
+        - 서비스 디스커버리 기능을 제공하여 GitLab의 각 서비스들의 위치와 상태 정보를 관리
+    - **Patroni**
+        - PostgreSQL 데이터베이스의 고가용성을 관리하며, 자동 장애 복구 및 리더 선출을 담당
+
+- **데이터베이스 관리**
+    - **Postgresql**
+        - GitLab의 주 데이터베이스로, 사용자 데이터 및 프로젝트 정보를 저장
+    - **PgBouncer**
+        - PostgreSQL 데이터베이스의 connection pool을 관리하고, failover를 처리
+
+- **Git 저장소 및 버전 관리**
+    - **Gitaly**
+        - Git 저장소의 데이터를 저장하고 접근을 관리하는 Git RPC 서비스
+    - **Praefect**
+        - Git 클라이언트와 Gitaly 스토리지 노드 간의 투명한 프록시 역할을 하여, 여러 Gitaly 서버 간의 상호작용을 관리
+
+- **로드 밸런싱**
+    - **Internal Loadbalancer**
+        - GitLab의 내부 서비스 간 통신을 위한 로드밸런서로, 서비스 간의 트래픽을 효율적으로 분배
+    - **External Loadbalancer**
+        - 외부에서 들어오는 트래픽을 처리하는 로드밸런서로, GitLab에 대한 외부 접근을 분배하고 최적화
+
+- **비동기 작업 처리**
+    - **Sidekiq**
+        - GitLab에서 비동기 작업을 처리하는 백그라운드 작업 큐로, 이메일 전송, 통계 수집 등과 같은 시간 소모적인 작업을 처리
+
+- **웹 서비스 및 API**
+    - **GitLab Rails**
+        - GitLab의 비즈니스 로직을 처리하는 Ruby on Rails 애플리케이션. 데이터베이스와 상호작용하고, 클라이언트의 요청을 처리
+    - **Puma**
+        - GitLab Rails 애플리케이션을 실행하는 웹 서버. HTTP 요청을 받아 처리하고, 클라이언트에게 응답을 반환
+
+- **리버스 프록시 및 파일 업로드 처리**
+    - **GitLab Workhorse**
+        - GitLab의 리버스 프록시로, 대용량 파일 업로드, Git 클론 및 푸시 작업을 처리
+        - 이를 통해 클라이언트와 서버 간의 효율적인 데이터 전송을 지원
 
 ## Gitlab Architecture
 
