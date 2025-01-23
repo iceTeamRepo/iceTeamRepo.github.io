@@ -503,7 +503,7 @@ Gitlab Runner 에 대한 설명 페이지
         9. 명령어를 따라 터미널에서 Runner 를 등록
             
             ```bash
-            $ gitlab-runner register  --url https://gitlab.com  --token glrt-t3_6Rz6d3hnBk_z69Xv9p8t
+            $ gitlab-runner register  --url https://gitlab.com  --token glrt-t3_xxxxxxxxxxxxxxxxxxxx
             ```
             
             ![image.png](../assets/img/gitlab/gitlab_runner/runner_ins_2.png)
@@ -511,7 +511,7 @@ Gitlab Runner 에 대한 설명 페이지
         10. 이 과정에서 다음을 입력
             
             ```bash
-            $ gitlab-runner register  --url https://gitlab.com  --token glrt-t3_6Rz6d3hnBk_z69Xv9p8t
+            $ gitlab-runner register  --url https://gitlab.com  --token glrt-t3_xxxxxxxxxxxxxxxxxxxx
             Runtime platform                                    arch=amd64 os=linux pid=4929 revision=3153ccc6 version=17.7.0
             WARNING: Running in user-mode.                     
             WARNING: The user-mode requires you to manually start builds processing: 
@@ -578,7 +578,7 @@ Gitlab Runner 에 대한 설명 페이지
           name = "testrunner"
           url = "https://gitlab.com"
           id = 44971859
-          token = "glrt-t3_6Rz6d3hnBk_z69Xv9p8t"
+          token = "glrt-t3_xxxxxxxxxxxxxxxxxxxx"
           token_obtained_at = 2024-12-24T08:14:48Z
           token_expires_at = 0001-01-01T00:00:00Z
           executor = "shell"
