@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theme Configuration
+title: About Gitlab
 nav_order: 1
 ---
 
