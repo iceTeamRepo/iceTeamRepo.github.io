@@ -15,7 +15,7 @@ nav_order: 3
     - Architecture
         - 기본 20 RPS 또는 1000 Users (Omnibus 리눅스 패키지 사용)
             
-            ![aws_ha_architecture_diagram_v17_0.png](../assets/img/gitlab/gitla_install/aws_ha_architecture_diagram_v17_0.png)
+            ![image_4.png](../assets/img/gitlab/gitla_install/image_4.png)
             
         - 60 RPS, 3,000 Users (Omnibus 리눅스 패키지 사용)
             - HA가 필요 : Auto Scaling 그룹 사용
