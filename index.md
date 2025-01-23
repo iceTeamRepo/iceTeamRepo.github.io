@@ -22,3 +22,6 @@ Gitlab 에 대한 정리 자료입니다.
 
 ## Runner
 - [Gitlab Storage](gitlab/gitlab_runner)
+
+## CICD
+- [Gitlab Storage](gitlab/gitlab_cicd)
