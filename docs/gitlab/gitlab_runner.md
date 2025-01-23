@@ -742,7 +742,7 @@ Gitlab Runner 에 대한 설명 페이지
               url = "https://gitlab.idtice.com"
               tls-ca-file = ""
               clone_url = ""
-              token = "glrt-FRt6zLNVMrbzqrm7bFzs"
+              token = "glrt-xxxxxxxxxxxxxxxxxxx"
               executor = "docker-autoscaler"
               environment = []
               pre_build_script = ""
