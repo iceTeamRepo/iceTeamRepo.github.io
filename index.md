@@ -25,3 +25,6 @@ Gitlab 에 대한 정리 자료입니다.
 
 ## CICD
 - [Gitlab CICD](gitlab/gitlab_cicd)
+
+## Monitoring
+- [Gitlab Monitoring](gitlab/gitlab_monitoring)
