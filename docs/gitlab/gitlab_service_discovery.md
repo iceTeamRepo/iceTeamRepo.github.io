@@ -365,6 +365,9 @@ Gitlab 에서 Consul 을 통한 Service Discovery 에 대한 설명 페이지
                     consul['use_tls'] = true
                     consul['tls_ca_file'] = '/path/to/ca.crt.pem'
                     consul['https_port'] = 8501
+
+                    # patroni 인스턴스 설정시
+                    patroni['consul']['url'] = 'https://localhost:8501'
                     ```
                     
                 3. GitLab 재구성
@@ -395,6 +398,9 @@ Gitlab 에서 Consul 을 통한 Service Discovery 에 대한 설명 페이지
                     consul['tls_certificate_file'] = '/path/to/client.crt.pem'
                     consul['tls_key_file'] = '/path/to/client.key.pem'
                     consul['https_port'] = 8501
+                    
+                    # patroni 인스턴스 설정시
+                    patroni['consul']['url'] = 'https://localhost:8501'
                     ```
                     
                 3. GitLab 재구성
@@ -432,7 +438,6 @@ Gitlab 에서 Consul 을 통한 Service Discovery 에 대한 설명 페이지
                     patroni['consul']['cert'] = '/opt/tls/patroni.crt.pem'
                     patroni['consul']['key'] = '/opt/tls/patroni.key.pem'
                     patroni['consul']['verify'] = true
-                    consul['https_port'] = 8501
                     ```
                     
                 3. GitLab 재구성
