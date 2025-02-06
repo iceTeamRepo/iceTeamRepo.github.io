@@ -384,6 +384,67 @@ Gitlab Configuration 에 대한 설명 페이지
         sudo gitlab-ctl reconfigure
         ```
 
+## [Roles](https://docs.gitlab.com/omnibus/roles/index.html#roles)
+
+ 
+- 설명
+    - 각 역할은 특정 서비스를 활성화하거나 비활성화하는 데 사용되며, 고가용성 구성에 중요한 역할을 함
+    - 필요한 역할만 활성화하여 성능을 최적화하고, 원하는 서비스만 실행하도록 GitLab을 구성할 수 있음
+    - 멀티 인스턴스를 사용시에 Role 을 사용하여 특정 모듈만 Enable 시킴
+        
+        ```ruby
+         # /etc/gitlab.rb
+         
+         # 단일 Role 지정
+         roles ['geo_primary_role']
+         
+         # 여러 Role 지정
+         roles ['redis_sentinel_role', 'redis_master_role']
+        ```
+        
+- Role 종류
+    - GitLab 애플리케이션 Role
+        - application_role(gitlab-ce/gitlab-ee)
+            - GitLab만 실행되는 인스턴스를 설정
+            - Redis, PostgreSQL, Consul 서비스는 기본적으로 비활성화
+    - Redis 서버 Role
+        - redis_sentinel_role (gitlab-ee)
+            - Redis Sentinel 서비스를 활성화
+        - redis_master_role (gitlab-ee)
+            - Redis 마스터 서비스와 모니터링을 활성화
+        - redis_replica_role (gitlab-ee)
+            - Redis 레플리카 서비스와 모니터링을 활성화
+    - GitLab Geo Role
+        - geo_primary_role (gitlab-ee)
+            - Geo 기본 사이트를 위한 설정, PostgreSQL 스트리밍 복제를 위한 리더 DB로 설정
+        - geo_secondary_role (gitlab-ee)
+            - Geo 보조 사이트를 위한 설정, 읽기 전용 복제 DB와 Geo 추적 DB를 활성화
+    - 모니터링 Role
+        - monitoring_role
+            - GitLab의 모니터링 및 성능 데이터를 수집하는 역할
+            - 이 역할을 통해 시스템 상태를 추적하고 경고를 받을 수 있음
+    - PostgreSQL Role
+        - postgres_role (gitlab-ce/gitlab-ee)
+            - PostgreSQL 서비스를 활성화
+        - patroni_role (gitlab-ee)
+            - Patroni 및 Consul 서비스를 활성화
+        - pgbouncer_role (gitlab-ee)
+            - PgBouncer 및 Consul 서비스를 활성화
+        - consul_role (gitlab-ee)
+            - Consul 서비스를 활성화
+    - GitLab Pages Role
+        - pages_role (gitlab-ce/gitlab-ee)
+            - GitLab Pages 인스턴스를 설정
+    - Sidekiq Role
+        - sidekiq_role (gitlab-ce/gitlab-ee)
+            - Sidekiq 서비스를 설정
+    - Spamcheck Role
+        - spamcheck_role (gitlab-ee)
+            - Spamcheck 및 spam-classifier 서비스를 설정
+    - 9. Gitaly Role
+        - gitaly_role (gitlab-ce/gitlab-ee)
+            - Gitaly 서비스를 설정
+
 ## Reference
 
 - [https://docs.gitlab.com/ee/administration/configure.html](https://docs.gitlab.com/ee/administration/configure.html)
