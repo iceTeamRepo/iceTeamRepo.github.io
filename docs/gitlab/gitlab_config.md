@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Configure Gitlab
+title: Configure Gitlab App Server
 permalink: gitlab/gitlab_config
 nav_order: 3
 ---
 
-# Configure Gitlab
+# Configure Gitlab App Server
 
 Gitlab App Server Configuration 에 대한 설명 페이지
 

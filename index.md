@@ -14,8 +14,8 @@ Gitlab 에 대한 정리 자료입니다.
 ## Gitlab Install for POC
 - [Gitlab Install for POC](gitlab/gitlab_install)
 
-## Configure Gitlab
-- [Configure Gitlab](gitlab/gitlab_config)
+## Configure Gitlab App Server
+- [Configure Gitlab App Server](gitlab/gitlab_config)
 
 ## Configure Gitlab Storage
 - [Configure Gitlab Storage](gitlab/gitlab_storage)
