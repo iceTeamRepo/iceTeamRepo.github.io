@@ -2,7 +2,7 @@
 layout: default
 title: Gitlab Install for POC
 permalink: gitlab/gitlab_install
-nav_order: 3
+nav_order: 2
 ---
 
 # Gitlab Install for POC

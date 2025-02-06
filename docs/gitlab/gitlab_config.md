@@ -2,7 +2,7 @@
 layout: default
 title: Configure Gitlab
 permalink: gitlab/gitlab_config
-nav_order: 2
+nav_order: 3
 ---
 
 # Configure Gitlab
