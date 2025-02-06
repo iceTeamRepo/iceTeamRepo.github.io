@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Gitlab Storage
+title: Configure Gitlab Storage
 permalink: gitlab/gitlab_storage
 nav_order: 4
 ---
 
-# Gitlab Storage
+# Configure Gitlab Storage
 
-Gitlab Storage 에 대한 설명 페이지
+Gitlab Storage Configuration 에 대한 설명 페이지
 
 ## Repository Storage
 

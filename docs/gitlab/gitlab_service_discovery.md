@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Gitlab Service Discovery
+title: Configure Gitlab Service Discovery
 permalink: gitlab/gitlab_service_discovery
-nav_order: 8
+nav_order: 7
 ---
 
-# Gitlab Service Discovery
+# Configure Gitlab Service Discovery
 
 Gitlab 에서 Consul 을 통한 Service Discovery 에 대한 설명 페이지
 

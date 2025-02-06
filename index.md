@@ -8,23 +8,26 @@ nav_order: 1
 
 Gitlab 에 대한 정리 자료입니다.
 
-## Architecture
+## Gitlab Reference Architecture
 - [Gitlab Reference Architecture](gitlab/gitlab_ref_architecture)
 
-## Install
-- [Gitlab Install](gitlab/gitlab_install)
+## Gitlab Install for POC
+- [Gitlab Install for POC](gitlab/gitlab_install)
 
-## Configuration
-- [Gitlab Install](gitlab/gitlab_config)
+## Configure Gitlab
+- [Configure Gitlab](gitlab/gitlab_config)
 
-## Storage
-- [Gitlab Storage](gitlab/gitlab_storage)
+## Configure Gitlab Storage
+- [Configure Gitlab Storage](gitlab/gitlab_storage)
 
-## Runner
-- [Gitlab Runner](gitlab/gitlab_runner)
+## Configure Runner
+- [Configure Runner](gitlab/gitlab_runner)
+
+## Configure Gitlab Monitoring
+- [Configure Gitlab Monitoring](gitlab/gitlab_monitoring)
+
+## Configure Gitlab Service Discovery
+- [Configure Gitlab Service Discovery](gitlab/gitlab_service_discovery)
 
 ## CICD
 - [Gitlab CICD](gitlab/gitlab_cicd)
-
-## Monitoring
-- [Gitlab Monitoring](gitlab/gitlab_monitoring)

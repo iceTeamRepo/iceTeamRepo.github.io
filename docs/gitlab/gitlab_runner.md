@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Gitlab Runner
+title: Configure Runner
 permalink: gitlab/gitlab_runner
 nav_order: 5
 ---
 
-# [Gitlab Runner](https://docs.gitlab.com/runner/) 
+# [Configure Runner](https://docs.gitlab.com/runner/) 
 
-Gitlab Runner 에 대한 설명 페이지
+Gitlab Runner Configuration 대한 설명 페이지
 
 ## Runner 기본
 

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Gitlab Monitoring
+title: Configure Gitlab Monitoring
 permalink: gitlab/gitlab_monitoring
-nav_order: 7
+nav_order: 6
 ---
 
 
-# Gitlab Monitoring
+# Configure Gitlab Monitoring
 - GitLab Performance Monitoring 는 GitLab에서 제공하는 애플리케이션 성능 측정 시스템
 - 커뮤니티와 엔터프라이즈 에디션 모두에서 사용 가능
 

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Gitlab Configuration
+title: Configure Gitlab
 permalink: gitlab/gitlab_config
 nav_order: 2
 ---
 
-# Gitlab Configuration
+# Configure Gitlab
 
-Gitlab Configuration 에 대한 설명 페이지
+Gitlab App Server Configuration 에 대한 설명 페이지
 
 
 ## [Nginx](https://docs.gitlab.com/omnibus/settings/nginx.html)

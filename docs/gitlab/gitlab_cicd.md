@@ -2,7 +2,7 @@
 layout: default
 title: Gitlab CICD
 permalink: gitlab/gitlab_cicd
-nav_order: 6
+nav_order: 8
 ---
 
 # Gitlab CICD
